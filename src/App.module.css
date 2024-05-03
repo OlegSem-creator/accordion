@@ -1,0 +1,64 @@
+.accordion {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin: 100px auto;
+}
+
+.item {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	column-gap: 24px;
+	row-gap: 32px;
+	align-items: center;
+
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	border-top: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	padding-right: 48px;
+	padding: 20px 24px;
+}
+
+.number {
+	font-size: 24px;
+	font-weight: 500;
+	color: #ced4da;
+}
+
+.title,
+.icon {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.title {
+	line-height: 1.3;
+}
+
+.contentBox {
+	grid-column: 2 / -1;
+	padding-bottom: 16px;
+	line-height: 1.6;
+}
+
+.contentBox ul {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	color: #868e96;
+	margin-left: 16px;
+	margin-top: 16px;
+}
+
+/* OPEN STATE */
+.open {
+	border-top: 4px solid #087f5b;
+}
+
+.open .number,
+.open .title {
+	color: #087f5b;
+}
